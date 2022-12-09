@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bikestore/frontend/libraries/bootstrap/css/bootstrap.css">
+    <!--My Css-->
+    <link rel="stylesheet" href="/bikestore/frontend/style/main.css">
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Detail Page</title>
+  </head>
+  <link rel="icon" type="image/x-icon" href="/bikestore/frontend/img/favicon.png">
+  <body>
+<!--Header-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">BIKESTORE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--TUTUP Header-->
+
+    <!--breadcrumb SECTION-->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Detail page</li>
+                </ol>
+              </nav>
+        </div>
+    </section>
+
+    <!--TUTUP breadcrumb SECTION-->
+
+    <!--DETAIL PRODUCT SECTION-->
+    <section class="Detail-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <img src="/bikestore/frontend/img/detail-product1.png" class="detail-product-img-big">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <div class="product-image-kecil">
+                        <img src="/bikestore/frontend/img/detail-product2.png" class="detail-product-img-small">
+                        <img src="/bikestore/frontend/img/detail-product2.png" class="detail-product-img-small">
+                        <img src="/bikestore/frontend/img/detail-product2.png" class="detail-product-img-small">
+                        <img src="/bikestore/frontend/img/detail-product2.png" class="detail-product-img-small">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--TUTUP DETAIL PRODUCT SECTION-->
+
+    <!--ABOUT PRODUCT SECTION-->
+    <section class="about-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="d-flex section-title">
+                        <h4>About</h4>
+                        <h4>&nbsp;The</h4>
+                        <h4>&nbsp;Bike</h4>
+                      </div>
+                      <p>Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down
+                        esthetic that exploits the use of repetition and understated development. Minimal techno is thought
+                        to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and
+                        Daniel Bell.
+                        Such trends saw the demise of the soul-infused techno that typified the original Detroit sound. Robert
+                        Hood has noted that he and Daniel Bell both realized something was missing from techno in the post-
+                        rave era.
+                        Design is a plan or specification for the construction of an object or system or for the implementation
+                        of an activity or process, or the result of that plan or specification in the form of a prototype, product or
+                        process. The national agency for design: enabling Singapore to use design for economic growth and
+                        to make lives better.</p>
+                </div>
+                
+                <div class="col-4">
+                  
+                   <div class="booking-bike border border-secondary">
+                    <h3>Booking Bike</h3>
+                    <h2>RP100.000.000</h2>
+                    <form id="form1" runat="server">                   
+                    <label for=color-select>color <br>
+                      <select class="color" id="color-select">
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Silver</option>
+                      </select>
+
+  
+                      <div class="increament-size" style="margin: 15px;">
+                        <div class="row">
+                        <input type="button" style="    background-color: #1ABC9C;
+                        color: white;
+                        border: none;
+                        width: 15%;" onclick="incrementDropDownList();" value="-" />
+                        
+                        <select name="size" id="size" style="width:205px;border-radius:0px;text-align: center;" >
+                          <option>Select Size</option>
+                          <option value="9:00">S</option>
+                          <option value="12:00">M</option>
+                          <option value="16:00">L</option>
+                          <option value="22:00">XL</option>
+                        </select>
+                        <input type="button" style="    background-color: #1ABC9C;
+                        color: white;
+                        border: none;
+                        width: 15%;" 
+                        onclick="incrementDropDownList();" value="+" />
+                        </div>
+
+                      </div>
+                    
+
+                        <label>
+                        <a href="booking-page.html">
+                        <div class="btn btn-primary">Continue to Book</div>
+                        </a>
+                    </form>
+                </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--TUTUP ABOUT PRODUCT SECTION-->
+
+    <!--POPULAR PRODUCT SECTION-->
+    <section class="popular-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex section-title">
+              <h4>Popular</h4>
+              <h4>&nbsp;Products</h4>
+            </div>
+          </div>
+        </div>
+            <div class="row">
+              <div class="col-3">
+                <a href="#" class="component-products d-block">
+                <div class="products-img mb-4">
+                  <img src="/bikestore/frontend/img/popular-product1.png" class="img-fluid">
+                </div>
+                <div class="products-text mb-2">
+                  Speach Steatlh
+                </div>
+                <div class="products-price">
+                  $333,33
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="#" class="component-products d-block">
+              <div class="products-img mb-4">
+                <img src="/bikestore/frontend/img/popular-product2.png" class="img-fluid">
+              </div>
+              <div class="products-text mb-2">
+                Speach Steatlh
+              </div>
+              <div class="products-price">
+                $333,33
+              </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="component-products d-block">
+            <div class="products-img mb-4">
+              <img src="/bikestore/frontend/img/popular-product3.png" class="img-fluid">
+            </div>
+            <div class="products-text mb-2">
+              Speach Steatlh
+            </div>
+            <div class="products-price">
+              $333,33
+            </div>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#" class="component-products d-block">
+          <div class="products-img mb-4">
+            <img src="/bikestore/frontend/img/popular-product4.png" class="img-fluid">
+          </div>
+          <div class="products-text mb-2">
+            Speach Steatlh
+          </div>
+          <div class="products-price">
+            $333,33
+          </div>
+        </a>
+      </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <a href="#" class="component-products d-block">
+          <div class="products-img mb-4">
+            <img src="/bikestore/frontend/img/popular-product5.png" class="img-fluid">
+          </div>
+          <div class="products-text mb-2">
+            Speach Steatlh
+          </div>
+          <div class="products-price">
+            $333,33
+          </div>
+        </a>
+      </div>
+        <div class="col-3">
+          <a href="#" class="component-products d-block">
+          <div class="products-img mb-4">
+            <img src="/bikestore/frontend/img/popular-product6.png" class="img-fluid">
+          </div>
+          <div class="products-text mb-2">
+            Speach Steatlh
+          </div>
+          <div class="products-price">
+            $333,33
+          </div>
+        </a>
+        </div>
+        <div class="col-3">
+          <a href="#" class="component-products d-block">
+          <div class="products-img mb-4">
+            <img src="/bikestore/frontend/img/popular-product7.png" class="img-fluid">
+          </div>
+          <div class="products-text mb-2">
+            Speach Steatlh
+          </div>
+          <div class="products-price">
+            $333,33
+          </div>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="#" class="component-products d-block">
+        <div class="products-img mb-4">
+          <img src="/bikestore/frontend/img/popular-product8.png" class="img-fluid">
+        </div>
+        <div class="products-text mb-2">
+          Speach Steatlh
+        </div>
+        <div class="products-price">
+          $333,33
+        </div>
+      </a>
+    </div>
+
+</div>
+    </section>
+    <Br>
+    
+
+    <!--TUTUP POPULAR PRODUCT SECTION-->
+
+    <!--TESTIMONIAL SECTION-->
+    <div class="section testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="testimonial-hero">
+              <img src="/bikestore/frontend/img/testimonial-img.png" class="testimonial-img">
+              <img src="/bikestore/frontend/img/testimonial-frame.png" class="testimonial-frame"">
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-7 my-auto">
+            <div class="stars">
+              <img src="/bikestore/frontend/img/testimonial-star.png">
+            </div>
+            <h2 class="testimonial-text">BIKESTORE "GOES TO <br> CAMPUS" X UIR . . .</h2>
+            <P class="testimonial-name">Sandicha Dwi Ramadhan</P>
+            <a href="#" class="btn btn-testimonial">Read Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--TUTUP TESTIMONIAL SECTION-->
+
+    <!--FOOTER-->
+    <section>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2>BIKESTORE</h2>
+              <a href="#">
+                <img src="/bikestore/frontend/img/social1.png">
+              </a>
+              <a href="#">
+                <img src="/bikestore/frontend/img/social2.png">
+              </a>
+              <a href="#">
+                <img src="/bikestore/frontend/img/social3.png">
+              </a>
+            </div>
+            <div class="col-6 text-right">
+              <h5>Address</h5>
+              <p>Jl Kaharudin Nasution No. 01,
+                Kecamatan Marpoyan Damai, Pekanbaru, Riau 28282
+                0812-1234-578 </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-small py-2">
+        <div class="row">
+          <div class="col-12">
+            <p>
+              2022 Copyright <a href="#">Bikestore</a>. All Right Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TUTUP FOOTER-->
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="/bikestore/frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    
+    <script type="text/javascript">
+
+    function incrementDropDownList()
+    {
+     var dropDownListRef = document.getElementById('size');
+     var selectedIndex = dropDownListRef.selectedIndex;
+    
+     selectedIndex++;
+    
+     if ( selectedIndex >= dropDownListRef.options.length )
+      selectedIndex = 0;
+    
+     dropDownListRef.selectedIndex = selectedIndex;
+    }
+      document.forms[0].size.selectedIndex = +1; 
+    // -->
+    </script>
+
+  </body>
+</html>
